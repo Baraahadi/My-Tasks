@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Oleo+Script:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Task Manager</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="logo">
+        <img src="img/logo.TM.png" alt="Task Manager Logo" class="logo-img" />
+        <h3>TASK MANAGER</h3>
+      </div>
+
+      <nav>
+        <ul class="navbar-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="container">
+      <div class="sidebar">
+        <h2>Task Menu</h2>
+        <button id="completed-task">
+          <i class="fa-regular fa-circle-check"></i> Completed Task
+        </button>
+
+        <button id="pending-task">
+          <i class="fa-regular fa-clock"></i> Pending Task
+        </button>
+        <button id="user"><i class="fa-solid fa-circle-user"></i> user</button>
+      </div>
+      <div class="task-managing">
+        <input type="text" placeholder="  Enter your task " id="task-input" />
+        <button id="addTask-btn">Add task</button>
+      </div>
+      <div class="task-container">
+        <h2>Your Tasks</h2>
+        <ul id="new-taskList"></ul>
+        <div id="previous-task">
+          <ul id="task-list">
+            <li class="completed-status-task">
+              Organize my desktop files into folders
+              <select name="task-status" class="task-status">
+                <option value="" disabled selected>Status</option>
+                <option value="pending">pending</option>
+                <option value="completed">completed</option>
+              </select>
+            </li>
+            <li class="completed-status-task">
+              Update my task manager UI
+              <select name="task-status" class="task-status">
+                <option value="" disabled selected>Status</option>
+                <option value="pending">pending</option>
+                <option value="completed">completed</option>
+              </select>
+            </li>
+            <li class="completed-status-task">
+              Review and delete unused code
+              <select name="task-status" class="task-status">
+                <option value="" disabled selected>Status</option>
+                <option value="pending">pending</option>
+                <option value="completed">completed</option>
+              </select>
+            </li>
+            <li id="4">
+              Take a 10-minute break without screen
+              <select name="task-status" class="task-status">
+                <option value="" disabled selected>Status</option>
+                <option value="pending">pending</option>
+                <option value="completed">completed</option>
+              </select>
+            </li>
+            <li id="5">
+              Read one article or tutorial
+              <select name="task-status" class="task-status">
+                <option value="" disabled selected>Status</option>
+                <option value="pending">pending</option>
+                <option value="completed">completed</option>
+              </select>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <footer><p>&copy; 2025 TM task manager. All rights reserved.</p></footer>
+  </body>
+  <script src="js/app.js"></script>
+</html>
